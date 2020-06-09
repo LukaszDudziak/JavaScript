@@ -34,7 +34,7 @@ undefined;
 
 // podwójna negacja
 !!true
-    !!0!!""
+// !!0!!""
 
 const userName1 = "Ścibor";
 const userName2 = "";
