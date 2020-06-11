@@ -5,8 +5,8 @@
 //PRZYKŁAD
 // - jako pierwszy argument podajemy nazwę zdarzenie w tym przypadku podwójne kliknięcie czyli "dblclick".
 // jako drugi argument podajemy funkcję (callback), która ma być wywołana w moemencie wystapienie zdarzenia (za każdym razem gdy wystąpi) 
-window.addEventListener("dblclick", function() {
- console.log("podwójne kliknięcie");
+window.addEventListener("dblclick", function () {
+    console.log("podwójne kliknięcie");
 });
 
 // PRZYKŁAD - możemy podać funkcję strzałkową
@@ -19,7 +19,7 @@ window.addEventListener("dblclick", function() {
 // }
 
 function showScroll() {
- console.log("skrol");
+    console.log("skrol");
 }
 
 window.addEventListener("scroll", showScroll);
@@ -28,9 +28,9 @@ window.addEventListener("scroll", showScroll);
 
 
 // PRZYKŁAD - metodę możemy przypisać bezposrednio do pobieranego elementu
-// document.querySelector('h1').addEventListener('mousemove', function() {
-//  this.textContent += "+";
-//  console.log("ruch myszką po h1");
+// document.querySelector('h1').addEventListener('mousemove', function () {
+//     this.textContent += "+";
+//     console.log("ruch myszką po h1");
 // })
 
 
@@ -38,9 +38,9 @@ window.addEventListener("scroll", showScroll);
 // PRZYKŁAD
 const h1 = document.querySelector('h1');
 
-const addText = function() {
- this.textContent += " :) "; //dodanie znaków (stringa) do istniejacej zawartości tekstowej
- h1.classList.toggle("red"); //dodanie/zabranie klasy z elementu (dodaje jak nie ma, zabiera jak jest)
+const addText = function () {
+    this.textContent += " :) "; //dodanie znaków (stringa) do istniejacej zawartości tekstowej
+    h1.classList.toggle("red"); //dodanie/zabranie klasy z elementu (dodaje jak nie ma, zabiera jak jest)
 }
 
 h1.addEventListener('click', addText);
@@ -48,8 +48,8 @@ h1.addEventListener('click', addText);
 
 // PRZYKŁAD - nastawienie nasłuchiwania, czyli uruchomienie metody addEventListener na każdym elemencie. Pamietajmy że nie można beżposrednio na pobranym obiekcie, tylko na każdym jego elemencie osobno
 
-const addClassRed = function() {
- console.log("klik li");
+const addClassRed = function () {
+    console.log("klik li");
 }
 
 const items = document.querySelectorAll("li");
@@ -65,5 +65,3 @@ const divElement = document.createElement('div');
 divElement.textContent = "Ostatni DIV";
 divElement.style.backgroundColor = "red";
 document.body.appendChild(divElement);
-
-
