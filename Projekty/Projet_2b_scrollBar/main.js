@@ -3,7 +3,7 @@ const div = document.createElement('div');
 document.body.appendChild(div);
 
 let size = 0;
-let slide = false;
+let slide = false; //flaga zmiany
 
 div.style.width = '100%';
 div.style.height = `${size}px`;
