@@ -1,10 +1,10 @@
-const chars = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ123456789';
+const chars = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ123456789abdefghijklmnopqrstuvwxyz';
 
 const btn = document.querySelector('button');
 const section = document.querySelector('section');
 
-const codesNumber = 1000;
-const charsNumber = 10;
+const codesNumber = 5000;
+const charsNumber = 13;
 
 const codesGenerator = () => {
     for (let i = 0; i < codesNumber; i++) {
