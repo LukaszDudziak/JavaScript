@@ -1,0 +1,23 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: arial;
+}
+
+input {
+    margin: 10px 20px 0 10px;
+    line-height: 20px;
+}
+
+button {
+    padding: 5px 10px;
+}
+
+ul {
+    list-style: none;
+}
+
+li {
+    margin: 5px 0 0 20px;
+}
